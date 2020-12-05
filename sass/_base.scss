@@ -17,6 +17,10 @@
     --line: var(--color-grey-light-2) 1px solid;
 }
 
+$bp-largest: 75rem;  //1200px
+$bp-large: 68.75rem;  //1100px
+$bp-medium: 56.25rem;  //900px
+
 * {
     margin: 0;
     padding: 0;
@@ -31,6 +35,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px, 10px/16px(browser default) = 62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
 
 body {
